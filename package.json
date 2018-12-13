@@ -1,0 +1,32 @@
+{
+  "name": "15-puzzle",
+  "version": "1.0.0",
+  "description": "A sliding puzzle game",
+  "main": "server.js",
+  "scripts": {
+    "lint": "eslint src/**",
+    "test": "jest",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "puzzle",
+    "game",
+    "boss puzzle"
+  ],
+  "author": "Adi biton",
+  "license": "MIT",
+  "dependencies": {
+    "express": "~4.16.4",
+    "pug": "~2.0.3",
+    "seedrandom": "~2.4.4"
+  },
+  "devDependencies": {
+    "eslint": "~5.10.0",
+    "eslint-config-standard": "~12.0.0",
+    "eslint-plugin-import": "~2.14.0",
+    "eslint-plugin-node": "~8.0.0",
+    "eslint-plugin-promise": "~4.0.1",
+    "eslint-plugin-standard": "~4.0.0",
+    "jest": "~23.6.0"
+  }
+}

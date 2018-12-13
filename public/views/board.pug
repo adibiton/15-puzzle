@@ -1,0 +1,25 @@
+html
+    include includes/head
+    body
+        div(class='container')
+            include includes/title
+            include includes/new-game-button
+            div(class='game-board')
+                table(class='game-table' border=1)
+                    tbody
+                        each row in game.printBoard()
+                            tr
+                            each column in row
+                                td
+                                    span=column
+                div(class='game-buttons')
+                    a(class='btn btn-outline-secondary btn-sm' href='/game/move?direction=1')
+                        span(class='oi oi-arrow-thick-top')
+                    a(class='btn btn-outline-secondary btn-sm' href='/game/move?direction=2')
+                        span(class='oi oi-arrow-thick-bottom')
+                    a(class='btn btn-outline-secondary btn-sm' href='/game/move?direction=3')
+                        span(class='oi oi-arrow-thick-left')
+                    a(class='btn btn-outline-secondary btn-sm' href='/game/move?direction=4')
+                        span(class='oi oi-arrow-thick-right')
+            if error
+                div(class='alert alert-warning game-warning')= error

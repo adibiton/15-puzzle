@@ -1,0 +1,20 @@
+.game-board{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.game-warning {
+    margin-top: 20px;
+}
+
+.game-buttons {
+    margin-top: 30px;
+}
+
+.game-table {
+    font-size: x-large;
+}

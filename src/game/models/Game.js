@@ -1,7 +1,5 @@
 'use strict'
-
 const Board = require('./Board')
-
 const {
   MOVE_TILE_DOWN, MOVE_TILE_LEFT,
   MOVE_TILE_RIGHT, MOVE_TILE_UP, BOARD_DIM,
@@ -9,9 +7,9 @@ const {
 } = require('../constants')
 
 class Game {
-  constructor (seed) {
+  constructor ({ seed, inOrder } = {}) {
     this.board = new Board()
-    this.board.shuffle({ seed })
+    this.board.shuffle({ seed, inOrder })
   }
 
   moveTile (direction) {

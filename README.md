@@ -16,3 +16,8 @@ npm start
 ```
 npm test
 ```
+
+### Test Coverage
+```
+npm run coverage
+```

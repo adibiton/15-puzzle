@@ -4,6 +4,7 @@
   "description": "A sliding puzzle game",
   "main": "server.js",
   "scripts": {
+    "coverage": "jest --coverage",
     "lint": "eslint src/**",
     "test": "jest",
     "start": "node server.js"

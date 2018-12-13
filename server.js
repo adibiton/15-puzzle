@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express()
-const router = require('./src/router')
+const router = require('./src/game/router')
 const PORT = process.env.PORT || 8081
 
 app.set('views', './public/views')

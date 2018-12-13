@@ -1,9 +1,9 @@
 'use strict'
 const express = require('express')
 const router = express.Router()
-const GameController = require('./game/controller')
-const Game = require('./game/models/Game')
-const { WELCOME_MESSAGE, GAME_DESCRIPTION } = require('./game/constants')
+const GameController = require('./controller')
+const Game = require('./models/Game')
+const { WELCOME_MESSAGE, GAME_DESCRIPTION } = require('./constants')
 let game
 let gameController
 

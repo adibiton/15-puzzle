@@ -1,5 +1,6 @@
 'use strict'
 const Board = require('./Board')
+const { BOARD_SIZE } = require('../constants')
 let board
 
 beforeEach(() => {
@@ -11,9 +12,9 @@ test('board has been initialized', () => {
 })
 
 test('board has a random tiles order', () => {
-  const expected = Array.from({ length: 16 }, (v, k) => k + 1)
+  const expected = Array.from({ length: BOARD_SIZE }, (v, k) => k + 1)
   board.shuffle()
-  const actual = board.printTiles({ emptyTile: 16 }).reduce((acc, row) => {
+  const actual = board.printTiles({ emptyTile: BOARD_SIZE }).reduce((acc, row) => {
     return acc.concat(row)
   }, [])
   expect(actual).toEqual(
